@@ -80,7 +80,8 @@ Conseil : Pour la redirection vers la page *read.php* vous devriez probablement 
 
 ## ALLER PLUS LOIN
 
-Par cet exercice nous avons fait du CRUD (Create Read Update Delete). Ce sont les actions de bases que l'on peut effectuer sur les données en base.
+Par cet exercice nous avons fait du CRUD (Create Read Update Delete). 
+Ce sont les actions de bases que l'on peut effectuer sur les données en base.
 
 ## Ajouter un nouveau champ
 
@@ -109,5 +110,9 @@ Si vous avez mis, dans chaque fichier, la connexion à la base de données sache
  Maintenant que vous le savez, il vous reste plus qu'à le mettre en place :)
 
 C'est une possibilité de refactorisation, il y en a d'autres...
+
+## Faire le Crud avec Ajax
+
+Ajouter des évenements sur vos boutons "valider" et créer des requettes Ajax !
 
 ## Bricoler un peu de Css !
