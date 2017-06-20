@@ -113,6 +113,6 @@ C'est une possibilité de refactorisation, il y en a d'autres...
 
 ## Faire le Crud avec Ajax
 
-Ajouter des évenements sur vos boutons "valider" et créer des requêtes Ajax !
+Ajouter des évenements sur vos boutons "valider" et créer des requêtes Ajax vers les différents script php !
 
 ## Bricoler un peu de Css !
