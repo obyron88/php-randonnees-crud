@@ -1,10 +1,11 @@
-# PHP CRUD randonnées île de la Réunion
+# PHP CRUD Les randonnées sur l'Île de la Réunion
 
 ![alt tag](http://www.jump-voyage.com/wp-content/uploads/2015/04/Carte-Ile-de-la-R%C3%A9union-4.jpg)
 
 ## Objectif
 
-Nous allons faire une web app qui va lister les randonnées à l'île de la Réunion.
+Nous allons faire une web app qui va lister les randonnées sur l'île de la Réunion.
+
 
 ## Création de la base de données
 Je vous ai créé la base de données. vous pouvez la récupérer *database/reunion_island.sql* pour l'importer.
@@ -108,3 +109,5 @@ Si vous avez mis, dans chaque fichier, la connexion à la base de données sache
  Maintenant que vous le savez, il vous reste plus qu'à le mettre en place :)
 
 C'est une possibilité de refactorisation, il y en a d'autres...
+
+## Bricoler un peu de Css !
