@@ -18,7 +18,7 @@ Cette base de données contient, pour l'instant, que la table *hiking* (randonn�
 Pour commencer à travailler, c'est plus simple d'avoir déjà des données...
 
 C'est pourquoi vous allez remplir la table *hiking* à partir des données que
-vous allez récupérer sur le site internet [randopitons.re](https://www.randopitons.re)
+vous allez récupérer sur le site internet [randopitons.re](https://www.randopitons.re/randonnees)
 
 Il faut insérer 5 randonnées. Chaque randonnée devra renseigner les champs :
 * name
