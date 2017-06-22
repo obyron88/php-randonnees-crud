@@ -1,3 +1,18 @@
+<?php
+		include('connect.php');
+
+$id = $_POST['id'];
+// select les champs dans la table hiking
+$reponse = $pdo->prepare('SELECT * FROM hiking WHERE id = :id');
+// bindParam dit que :id = $id
+$reponse->bindParam(':id', $id, PDO::PARAM_INT);
+// exec $reponse
+$reponse->execute();
+// récupère les champs de la table récupéré
+$rando= $reponse->fetch();
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,12 +21,13 @@
 	<link rel="stylesheet" href="css/basics.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-	<a href="/php-pdo/read.php">Liste des randonnées</a>
+	<a href="read.php">Liste des randonnées</a>
 	<h1>Ajouter</h1>
-	<form action="" method="post">
+	<form action="update2.php" method="post">
 		<div>
 			<label for="name">Name</label>
-			<input type="text" name="name" value="">
+			<!-- injecte le name récupéré par rando en value -->
+			<input type="text" name="name" value="<?=$rando->name?>">
 		</div>
 
 		<div>
@@ -24,20 +40,23 @@
 				<option value="tres difficile">Très difficile</option>
 			</select>
 		</div>
-		
+
 		<div>
 			<label for="distance">Distance</label>
-			<input type="text" name="distance" value="">
+			<input type="text" name="distance" value="<?=$rando->distance?>">
 		</div>
 		<div>
 			<label for="duration">Durée</label>
-			<input type="duration" name="duration" value="">
+			<input type="duration" name="duration" value="<?=$rando->duration?>">
 		</div>
 		<div>
 			<label for="height_difference">Dénivelé</label>
-			<input type="text" name="height_difference" value="">
+			<input type="text" name="height_difference" value="<?=$rando->height_difference?>">
 		</div>
-		<button type="button" name="button">Valider</button>
+		<input hidden type="number" name="id" value="<?= $rando->id?>">
+		<button type="submit" name="button">Valider</button>
+
+
 	</form>
 </body>
 </html>
