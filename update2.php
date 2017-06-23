@@ -10,8 +10,8 @@ $distance = $_POST['distance'];
 $duration = $_POST['duration'];
 $height_difference = $_POST['height_difference'];
 
-var_dump($id, $name, $difficulty, $distance, $duration, $height_difference);
-$reponse = $pdo->prepare('UPDATE hiking SET( name = ":name", difficulty = ":difficulty", distance = ":distance", duration = ":duration", height_difference = ":height_difference") WHERE "id"= ?');
+// var_dump($id, $name, $difficulty, $distance, $duration, $height_difference);
+$reponse = $pdo->prepare('UPDATE hiking SET( name = :name, difficulty = :difficulty, distance = :distance, duration = :duration, height_difference = :height_difference) WHERE id= ?');
 
 $reponse->bindParam(':id', $id, PDO::PARAM_INT);
 $reponse->bindParam(':name', $name);
@@ -21,8 +21,18 @@ $reponse->bindParam(':duration', $duration);
 $reponse->bindParam(':height_difference', $height_difference);
 
 		$reponse->execute();
-		// echo "update réussie !";
-	// }
+ // 	$reponse->execute(array(
+ //
+ //  'id' => $id,
+ // 'name' => $name,
+ // 'difficulty' => $difficulty,
+ // 'distance' => $distance,
+ // 'duration' => $duration,
+ // 'height_difference' => $height_difference
+
+// ));
+		// header("location: read.php");
+
 
 
 ?>

@@ -53,7 +53,7 @@ $rando= $reponse->fetch();
 			<label for="height_difference">Dénivelé</label>
 			<input type="text" name="height_difference" value="<?=$rando->height_difference?>">
 		</div>
-		<input hidden type="number" name="id" value="<?= $rando->id?>">
+		<input type="hidden" type="number" name="id" value="<?= $rando->id?>">
 		<button type="submit" name="button">Valider</button>
 
 

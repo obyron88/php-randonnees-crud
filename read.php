@@ -24,13 +24,13 @@
                 <p><?= $value->distance ?></p>
                 <p><?= $value->duration ?></p>
                 <p><?= $value->height_difference ?></p>
-                </form>
+
                 <form class="" action="delete.php" method="post">
-                  <input hidden type="number" name="id" value="<?= $value->id?>">
+                  <input type="hidden" type="number" name="id" value="<?= $value->id?>">
                   <input type="submit" value="supprimer">
                 </form>
                 <form class="" action="update.php" method="post">
-                  <input hidden type="number" name="id" value="<?= $value->id ?>">
+                  <input type="hidden" type="number" name="id" value="<?= $value->id ?>">
                   <input type="submit" value="edit">
                 </form>
                   <hr>
